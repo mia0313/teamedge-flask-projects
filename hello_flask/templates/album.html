@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link ref="stylesheet" href="static/style.css">
+</head>
+<body> 
+    <h1>{{album}} by {{artist}} was released in {{year}}, and is one of my favourite albums!</h1>
+    <ol>
+        {% for song in songs %}
+        <li>{{song}}</li>
+        {% endfor %}
+    </ol>
+</body>
