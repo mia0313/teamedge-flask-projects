@@ -15,8 +15,8 @@ def index():
 @app.route('/send', methods=['GET','POST'])
 def sent():
     #get posteed form data using names assigned in HTML
-    task = request.form['fname']
-    deadline = request.form['deadline']
+    task = request.form['name']
+    date = request.form['deadline']
     #connect to database and insert task and deadline
     conn = sqlite3.connect('./static/data/senseDisplay.db')
     curs = conn.cursor()

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, current_app as app
+from flask import Flask, render_template, current_app, request
 import sqlite3
 
 app = Flask(__name__)
